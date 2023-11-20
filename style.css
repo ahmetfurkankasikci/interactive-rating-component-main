@@ -1,0 +1,147 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: hsl(217, 12%, 63%);
+    margin: 0;
+}
+
+button {
+    background-color: #FB7413;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 12px 0;
+    letter-spacing: .15rem;
+}
+
+.card-colors {
+    background-color: hsl(216, 12%, 8%);
+    background-color: hsl(213, 19%, 18%);
+    background-color: hsl(216, 12%, 54%);
+    background-color: hsl(217, 12%, 63%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+    background-color: #19202A;
+    height: 47%;
+    width: 22%;
+    border-radius: 30px;
+    padding: 45px;
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#content>*+* {
+    margin-bottom: 1.5rem;
+}
+
+#content-submit {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FB7413;
+    background-color: hsl(213, 19%, 18%);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 6px 24px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#selectedNo {
+    margin: 0 3.5px;
+}
+.orange-back {
+    background-color: #FB7413;
+}
+.orange-back:hover {
+    background-color: hsl(217, 12%, 63%);
+}
+.normal-back {
+    background-color: hsl(213, 19%, 18%);
+}
+.normal-back:hover {
+    background-color: hsl(217, 12%, 63%);
+}
+.steps-container>.step {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 426px) {
+    p {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 80%;
+        height: 50%;
+        padding: 30px 20px;
+    }
+
+    #content>*+* {
+        margin-bottom: 1rem;
+    }
+}
